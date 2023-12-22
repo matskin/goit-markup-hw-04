@@ -1,0 +1,394 @@
+:root {
+    --color-primary: #212121;
+    --color-secondary: #757575;
+    --color-brand: #2196f3;
+    --color-light: #fff;
+    --color-bg-dark: #2f303a;
+    --color-logo: #000;
+    --color-link: #fff9;
+    --color-bg: #f5f4fa;
+    --color-line: #ececec;
+    --card-set-gap: 30px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+.site-header {
+    border-bottom: 1px solid var(--color-line);
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    width: 1200px;
+    text-align: center;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.header-logo {
+    margin-right: 93px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.18;
+    color: var(--color-logo);
+}
+
+.header-logo .accent {
+    color: var(--color-brand);
+}
+
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav .list .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    line-height: 1.18;
+    color: var(--color-primary);
+}
+
+.header-link:hover {
+    color: var(--color-brand);
+}
+
+.selected {
+    color: var(--color-brand);
+}
+
+.contacts-link {
+    font-weight: 500;
+    line-height: 1.18;
+    color: var(--color-secondary);
+}
+
+.contacts-link:hover {
+    color: var(--color-brand);
+}
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+/* Main section */
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* Hero section */
+.hero-section {
+    padding: 200px 0;
+    background-color: var(--color-bg-dark);
+}
+
+.hero-title {
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: var(--color-light);
+    text-transform: uppercase;
+}
+
+.hero-button {
+    margin: 0;
+
+    width: 216px;
+    height: 50px;
+    flex-shrink: 0;
+
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    color: var(--color-light);
+    border: none;
+    background-color: var(--color-brand);
+}
+
+.section-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.18;
+}
+
+/* Benefits section  */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefits .item {
+    width: 270px;
+}
+
+.benefits .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.benefit-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.benefit-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--color-secondary);
+    text-align: left;
+}
+
+/* Do section  */
+.do-section {
+    padding-bottom: 94px;
+}
+
+.do .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* Team section  */
+.team {
+    background-color: var(--color-bg);
+}
+
+.team-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-list .item {
+    width: 270px;
+    flex-shrink: 0;
+
+    border-radius: 0px 0px 4px 4px;
+    background: #FFF;
+
+    /* material shadow v1 */
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.person {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.person-name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.person-job {
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--color-secondary);
+}
+
+/* Works section */
+.button {
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button > .item:not(:last-child) {
+    margin-right: 8px;
+}
+
+/* CARD SET */
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--card-set-gap));
+    margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.card-set > .item {
+    width: 370px;
+    margin-left: var(--card-set-gap);
+    margin-top: var(--card-set-gap);
+}
+
+.card-set-title {
+    padding: 20px 24px;
+    border-right: 1px solid #EEE;
+    border-bottom: 1px solid #EEE;
+    border-left: 1px solid #EEE;
+    background: #FFF;
+}
+
+.works-title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.875;
+    color: var(--color-primary);
+    text-align: left;
+}
+
+.works-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-secondary);
+    text-align: left;
+}
+
+.works-button {
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.875;
+    color: var(--color-primary);
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-bg);
+    text-align: center;
+}
+
+.works-button:hover {
+    color: var(--color-light);
+    background-color: var(--color-brand);
+}
+
+.works-button.selected {
+    color: var(--color-light);
+    background-color: var(--color-brand);
+}
+
+/* Footer section  */
+.footer > .container {
+    text-align: left;
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--color-bg-dark);
+}
+
+.footer-list {
+    display: block;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.18;
+    color: var(--color-light);
+}
+
+.footer-logo .accent {
+    color: var(--color-brand);
+}
+
+.footer-list .item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.address-link {
+    color: var(--color-light);
+}
+
+.mail-link {
+    display: block;
+    
+    color: var(--color-link);
+}
+
+.tel-link {
+    display: block;
+
+    color: var(--color-link);
+}
+
+.footer-link:hover {
+    color: var(--color-brand);
+}
