@@ -125,10 +125,6 @@ a {
     color: var(--color-secondary);
 }
 
-.contacts-link:hover {
-    color: var(--color-brand);
-}
-
 .auth-nav {
     display: flex;
     margin-left: auto;
@@ -138,10 +134,18 @@ a {
     margin-right: 50px;
 }
 
+.auth-nav-item:hover {
+    color: var(--color-brand);
+}
+
 .auth-nav-icon {
     width: 16px;
     height: 12px;
-    fill: red;
+    fill: var(--color-secondary);
+}
+
+.auth-nav-icon:hover {
+    fill: var(--color-brand);
 }
 
 /* Main section */
