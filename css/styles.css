@@ -134,18 +134,14 @@ a {
     margin-right: 50px;
 }
 
-.auth-nav-item:hover {
+.contacts-link:hover {
     color: var(--color-brand);
 }
 
 .auth-nav-icon {
     width: 16px;
     height: 12px;
-    fill: var(--color-secondary);
-}
-
-.auth-nav-icon:hover {
-    fill: var(--color-brand);
+    fill: currentColor;
 }
 
 /* Main section */
