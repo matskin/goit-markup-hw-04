@@ -128,10 +128,16 @@ a {
 .auth-nav {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 .auth-nav .item:not(:last-child) {
     margin-right: 50px;
+}
+
+.contacts-link {
+    display: flex;
+    align-items: center;
 }
 
 .contacts-link:hover {
@@ -139,9 +145,18 @@ a {
 }
 
 .auth-nav-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.envelope {
     width: 16px;
     height: 12px;
-    fill: currentColor;
+}
+
+.smartphone {
+    width: 10px;
+    height: 16px;
 }
 
 /* Main section */
